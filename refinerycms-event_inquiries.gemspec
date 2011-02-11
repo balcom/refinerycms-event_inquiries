@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name              = %q{refinerycms-event_inquiries}
   s.version           = %q{0.9.9.9}
-  s.date              = %q{2010-12-29}
+  s.date              = %q{2011-02-11}
   s.summary           = %q{EventInquiry handling functionality for the Refinery CMS project.}
   s.description       = %q{EventInquiry handling functionality extracted from Refinery CMS to allow you to have a contact form and manage event_inquiries in the Refinery backend.}
   s.homepage          = %q{http://refinerycms.com}
@@ -61,8 +61,8 @@ Gem::Specification.new do |s|
     'config/routes.rb',
     'db',
     'db/migrate',
-    'db/migrate/20101208082840_create_event_inquiries.rb',
-    'db/migrate/20101208082841_remove_position_and_open_from_event_inquiries.rb',
+    'db/migrate/20110211103100_create_event_inquiries.rb',
+    'db/migrate/20110211103101_remove_position_and_open_from_event_inquiries.rb',
     'db/seeds',
     'db/seeds/pages_for_event_inquiries.rb',
     'features',
@@ -74,10 +74,10 @@ Gem::Specification.new do |s|
     'features/support/factories.rb',
     'features/support/paths.rb',
     'lib',
+    'lib/event_inquiries.rb',
     'lib/gemspec.rb',
     'lib/generators',
     'lib/generators/refinerycms_event_inquiries_generator.rb',
-    'lib/event_inquiries.rb',
     'lib/refinerycms-event_inquiries.rb',
     'license.md',
     'readme.md',
