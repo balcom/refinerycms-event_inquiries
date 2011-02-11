@@ -9,9 +9,9 @@ en:
       privacy_policy: We value your privacy
   admin:
     event_inquiries:
-      delete: Remove this event_enquiry forever
-      event_enquiry:
-        read_event_enquiry: Read the event_enquiry
+      delete: Remove this event_inquiry forever
+      event_inquiry:
+        read_event_inquiry: Read the event_inquiry
         said: said
         mark_as_spam: Mark as spam
         mark_as_ham: Move to inbox
@@ -30,34 +30,34 @@ en:
         back_to_all_event_inquiries: Back to all EventInquiries
         spam: Spam
         spam_yes: 'yes'
-        event_enquiry: EventInquiry
+        event_inquiry: EventInquiry
         to: To
         from: From
         click_to_email: Click to email this address
         phone: Phone
         date: Date
         message: Message
-    event_enquiry_settings:
+    event_inquiry_settings:
       notification_recipients_form:
-        event_enquiry_settings_value_name: Send notifications to
-        hint: When a new event_enquiry is submitted, Refinery will send an email notification to you.
+        event_inquiry_settings_value_name: Send notifications to
+        hint: When a new event_inquiry is submitted, Refinery will send an email notification to you.
         example: "Enter your email address(es) like: jack@work.com, jill@office.com"
       confirmation_email_form:
         to: To
         from: From
         subject: Subject
         click_to_edit_subject: Click here to edit the subject
-        explanation: Every time someone contacts you on your website, Refinery sends out an email to confirm the event_enquiry with the person who made it.
+        explanation: Every time someone contacts you on your website, Refinery sends out an email to confirm the event_inquiry with the person who made it.
         below_edit_email_sent: Below you can edit the email that is sent out.
-        the_customer_making_event_enquiry: The customer making the event_enquiry
+        the_customer_making_event_inquiry: The customer making the event_inquiry
         message: Message
         note: "Note: place the text %name% where you'd like the customer's name to appear in the email"
-  event_enquiry_mailer:
+  event_inquiry_mailer:
     notification:
       greeting: Hi there
-      you_recieved_new_event_enquiry: You just received a new event_enquiry on your website.
-      event_enquiry_starts: --- event_enquiry starts ---
-      event_enquiry_ends: --- event_enquiry ends ---
+      you_recieved_new_event_inquiry: You just received a new event_inquiry on your website.
+      event_inquiry_starts: --- event_inquiry starts ---
+      event_inquiry_ends: --- event_inquiry ends ---
       from: From
       email: Email
       phone: Phone
@@ -66,9 +66,9 @@ en:
       ps: P.S. All your event_inquiries are stored in the "EventInquiries" section of Refinery should you ever want to view it later there.
   activerecord:
     models:
-      event_enquiry: event_enquiry
+      event_inquiry: event_inquiry
     attributes:
-      event_enquiry:
+      event_inquiry:
         name: Name
         email: Email
         phone: Phone

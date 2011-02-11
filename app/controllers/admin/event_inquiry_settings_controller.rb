@@ -21,7 +21,7 @@ protected
   end
 
   def set_url_override?
-    @url_override = admin_event_enquiry_setting_url(@refinery_setting, :dialog => from_dialog?)
+    @url_override = admin_event_inquiry_setting_url(@refinery_setting, :dialog => from_dialog?)
   end
 
   def find_refinery_setting
@@ -34,8 +34,8 @@ protected
     end
 
     # prime the setting first, if it's valid.
-    if EventInquirySetting.methods.map(&:to_sym).include?(params[:id].to_s.gsub('event_enquiry_', '').to_sym)
-      EventInquirySetting.send(params[:id].to_s.gsub('event_enquiry_', '').to_sym)
+    if EventInquirySetting.methods.map(&:to_sym).include?(params[:id].to_s.gsub('event_inquiry_', '').to_sym)
+      EventInquirySetting.send(params[:id].to_s.gsub('event_inquiry_', '').to_sym)
     end
     @refinery_setting = RefinerySetting.find_by_name(params[:id])
   end

@@ -2,10 +2,10 @@
   <div class='event_inquiries'>
     <%=raw @page[Page.default_parts.first.to_sym] %>
 
-    <%= form_for @event_enquiry do |f| %>
+    <%= form_for @event_inquiry do |f| %>
       <%= render :partial => "/shared/admin/error_messages",
                  :locals => {
-                   :object => @event_enquiry,
+                   :object => @event_inquiry,
                    :include_object_name => true
                  } %>
       <div class='field'>

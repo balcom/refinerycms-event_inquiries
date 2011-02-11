@@ -11,8 +11,8 @@ pl:
   admin:
     event_inquiries:
       delete: Na zawsze usuń to zapytanie
-      event_enquiry:
-        read_event_enquiry: Przeczytaj zapytanieRead the event_enquiry
+      event_inquiry:
+        read_event_inquiry: Przeczytaj zapytanieRead the event_inquiry
         said: powiedział
         mark_as_spam: Oznacz jako spam
         mark_as_ham: Przenieś do przychodzących
@@ -31,16 +31,16 @@ pl:
         back_to_all_event_inquiries: Powrót do wszystkich zapytań
         spam: Spam
         spam_yes: 'tak'
-        event_enquiry: Zapytanie
+        event_inquiry: Zapytanie
         to: Do
         from: Od
         click_to_email: Kliknij tu aby wysłać e-mail na ten adres
         phone: Telefon
         date: Data
         message: Wiadomość
-    event_enquiry_settings:
+    event_inquiry_settings:
       notification_recipients_form:
-        event_enquiry_settings_value_name: Wysyłaj powiadomienia do
+        event_inquiry_settings_value_name: Wysyłaj powiadomienia do
         hint: Kiedy dostarczone zostanie nowe zapytanie, Refinery wyśle do Ciebie wiadomość e-mail.
         example: "Podaj swój adres (lub adresy) e-mail, w taki sposób: jack@work.com, jill@office.com"
       confirmation_email_form:
@@ -50,15 +50,15 @@ pl:
         click_to_edit_subject: Kliknij tu aby zmienić temat
         explanation: Za każdym razem kiedy ktoś kontaktuje się z Tobą poprzez witrynę, Refinery wysyła do tej osoby e-mail.
         below_edit_email_sent: Poniżej można zmienić e-mail który zostanie wysłany.
-        the_customer_making_event_enquiry: Klient wykonujący zapytanie
+        the_customer_making_event_inquiry: Klient wykonujący zapytanie
         message: Wiadomość
         note: "Uwaga: w celu zamieszczenia imienia klienta należy umieścić tekst %name%"
-  event_enquiry_mailer:
+  event_inquiry_mailer:
     notification:
       greeting: Cześć
-      you_recieved_new_event_enquiry: Z Twojej strony ktoś właśnie nowe zapytanie.
-      event_enquiry_starts: --- początek zapytania ---
-      event_enquiry_ends: --- koniec zapytania ---
+      you_recieved_new_event_inquiry: Z Twojej strony ktoś właśnie nowe zapytanie.
+      event_inquiry_starts: --- początek zapytania ---
+      event_inquiry_ends: --- koniec zapytania ---
       from: Od
       email: E-mail
       phone: Telefon
@@ -67,9 +67,9 @@ pl:
       ps: P.S. Wszystkie Twoje zapytania są przechowywane pod zakładką "Zapytania" w Refinery, więc możesz do nich wrócić jeżeli będzie to potrzebne.
   activerecord:
     models:
-      event_enquiry: zapytanie
+      event_inquiry: zapytanie
     attributes:
-      event_enquiry:
+      event_inquiry:
         name: Imię
         email: E-mail
         phone: Telefon

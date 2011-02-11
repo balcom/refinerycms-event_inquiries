@@ -9,8 +9,8 @@ nl:
   admin:
     event_inquiries:
       delete: Verwijder deze vraag voorgoed
-      event_enquiry:
-        read_event_enquiry: Lees de vraag
+      event_inquiry:
+        read_event_inquiry: Lees de vraag
         said: zei
         mark_as_spam: Markeer als spam
         mark_as_ham: Verplaats naar de inbox
@@ -29,16 +29,16 @@ nl:
         back_to_all_event_inquiries: Terug naar alle vragen
         spam: Spam
         spam_yes: ja
-        event_enquiry: Vraag
+        event_inquiry: Vraag
         to: Aan
         from: Van
         click_to_email: Klik hier om een e-mail te sturen
         phone: Telefoonnummer
         date: Datum
         message: Bericht
-    event_enquiry_settings:
+    event_inquiry_settings:
       notification_recipients_form:
-        event_enquiry_settings_value_name: Stuur notificaties naar
+        event_inquiry_settings_value_name: Stuur notificaties naar
         explanation: "Iedere keer wanneer iemand het vraag formulier invult op uw website, stuurt Refinery een email waarin staat dat er een nieuwe vraag ontvangen is."
         hint: "Vul hierboven een email adres in. Wilt u naar meerdere adressen notificaties sturen? Vul dan meerdere email adressen in gescheiden door comma's"
         example: "Bijvoorbeeld: ik@domein.com, vrienden@msn.com, collegas@werk.com"
@@ -49,15 +49,15 @@ nl:
         click_to_edit_subject: Klik hier om het onderwerp bewerken
         explanation: "Iedere keer wanneer iemand het vraag formulier invult op uw website, stuurt Refinery een email naar die persoon waarin staat dat de vraag ontvangen is."
         below_edit_email_sent: Hieronder kun je de email die verzonden wordt bewerken.
-        the_customer_making_event_enquiry: De persoon die de heeft vraag gesteld
+        the_customer_making_event_inquiry: De persoon die de heeft vraag gesteld
         message: Bericht
         note: "Notitie: plaats de tekst %name% overal in je email waar je de naam van de vragende persoon wilt invoegen"
-  event_enquiry_mailer:
+  event_inquiry_mailer:
     notification:
       greeting: Hallo
-      you_recieved_new_event_enquiry: Je hebt een nieuwe vraag via de website ontvangen.
-      event_enquiry_starts: --- begin van de vraag---
-      event_enquiry_ends: --- einde van de vraag---
+      you_recieved_new_event_inquiry: Je hebt een nieuwe vraag via de website ontvangen.
+      event_inquiry_starts: --- begin van de vraag---
+      event_inquiry_ends: --- einde van de vraag---
       from: Van
       email: Email
       phone: Telefoon
@@ -66,9 +66,9 @@ nl:
       ps: P.S. Alle vragen woren opgeslagen in de "vragen" sectie van uw website.All your event_inquiries are stored in the "EventInquiries" section of Refinery.
   activerecord:
     models:
-      event_enquiry: Vraag
+      event_inquiry: Vraag
     attributes:
-      event_enquiry:
+      event_inquiry:
         name: Naam
         email: 'Email'
         phone: Telefoon

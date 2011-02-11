@@ -12,8 +12,8 @@ it:
   admin:
     event_inquiries:
       delete: Rimuovi per sempre questa richiesta
-      event_enquiry:
-        read_event_enquiry: Leggi la richiesta
+      event_inquiry:
+        read_event_inquiry: Leggi la richiesta
         said: dice
         mark_as_spam: Segnala come spam
         mark_as_ham: Sposta nella inbox
@@ -32,16 +32,16 @@ it:
         back_to_all_event_inquiries: Torna a tutte le richieste
         spam: Spam
         spam_yes: 'si'
-        event_enquiry: Domanda
+        event_inquiry: Domanda
         to: A
         from: Da
         click_to_email: Fare click per inviare una email a questo indirizzo
         phone: Telefono
         date: Data
         message: Messaggio
-    event_enquiry_settings:
+    event_inquiry_settings:
       notification_recipients_form:
-        event_enquiry_settings_value_name: Inviare notifiche a
+        event_inquiry_settings_value_name: Inviare notifiche a
         hint: Quando una nuova richiesta viene inviata, Refinery ti invierà una email di notifica.
         example: "Inserisci i tuoi indirizzi email come: jack@work.com, jill@office.com"
       confirmation_email_form:
@@ -51,15 +51,15 @@ it:
         click_to_edit_subject: Fare clic qui per modificare l'oggetto
         explanation: Ogni volta che qualcuno ti contatta attraverso il tuo sito web, Refinery invia una mail per confermare la richiesta alla persona che l'ha fatta
         below_edit_email_sent: Qui di seguito è possibile modificare l'e-mail che viene inviata.
-        the_customer_making_event_enquiry: Chi invia il messaggio
+        the_customer_making_event_inquiry: Chi invia il messaggio
         message: Messaggio
         note: "Nota: inserire nella email il testo %name% dove si vuole che compiaia il nome di chi invia la richiesta"
-  event_enquiry_mailer:
+  event_inquiry_mailer:
     notification:
       greeting: Ciao a tutti
-      you_recieved_new_event_enquiry: Hai appena ricevuto una nuova richiesta sul tuo sito.
-      event_enquiry_starts: --- inizio del messaggio ---
-      event_enquiry_ends: --- fine del messaggio ---
+      you_recieved_new_event_inquiry: Hai appena ricevuto una nuova richiesta sul tuo sito.
+      event_inquiry_starts: --- inizio del messaggio ---
+      event_inquiry_ends: --- fine del messaggio ---
       from: Da
       email: Email
       phone: Telefono
@@ -68,9 +68,9 @@ it:
       ps: P.S. Tutte le richiesta ricevute sono salvate nella sezione "Richieste" di Refinery così da poter esser viste in un secondo momento.
   activerecord:
     models:
-      event_enquiry: event_enquiry
+      event_inquiry: event_inquiry
     attributes:
-      event_enquiry:
+      event_inquiry:
         name: Nome
         email: Email
         phone: Telefono

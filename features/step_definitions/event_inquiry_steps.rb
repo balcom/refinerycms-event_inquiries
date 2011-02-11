@@ -6,13 +6,13 @@ Then /^I should have ([0-9]+) event_inquiries?$/ do |count|
   EventInquiry.count.should == count.to_i
 end
 
-Given /^I have an? event_enquiry from "([^"]*)" with email "([^\"]*)" and message "([^\"]*)"$/ do |name, email, message|
+Given /^I have an? event_inquiry from "([^"]*)" with email "([^\"]*)" and message "([^\"]*)"$/ do |name, email, message|
   EventInquiry.create(:name => name,
                  :email => email,
                  :message => message)
 end
 
-Given /^I have an? event_enquiry titled "([^"]*)"$/ do |title|
+Given /^I have an? event_inquiry titled "([^"]*)"$/ do |title|
   EventInquiry.create(:name => title,
                  :email => 'test@cukes.com',
                  :message => 'cuking ...',

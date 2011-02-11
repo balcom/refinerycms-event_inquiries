@@ -1,6 +1,6 @@
 class Admin::EventInquiriesController < Admin::BaseController
 
-  crudify :event_enquiry, :title_attribute => "name", :order => "created_at DESC"
+  crudify :event_inquiry, :title_attribute => "name", :order => "created_at DESC"
   helper_method :group_by_date
 
   before_filter :find_all_ham, :only => [:index]
@@ -18,8 +18,8 @@ class Admin::EventInquiriesController < Admin::BaseController
   end
 
   def toggle_spam
-    find_event_enquiry
-    @event_enquiry.toggle!(:spam)
+    find_event_inquiry
+    @event_inquiry.toggle!(:spam)
 
     redirect_to :back
   end

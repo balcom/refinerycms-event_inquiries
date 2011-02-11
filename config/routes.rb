@@ -1,5 +1,5 @@
 Refinery::Application.routes.draw do
-  get '/contact', :to => 'event_inquiries#new', :as => 'new_event_enquiry'
+  get '/contact', :to => 'event_inquiries#new', :as => 'new_event_inquiry'
   resources :contact,
             :only => :create,
             :as => :event_inquiries,
@@ -18,6 +18,6 @@ Refinery::Application.routes.draw do
         get :toggle_spam
       end
     end
-    resources :event_enquiry_settings, :only => [:edit, :update]
+    resources :event_inquiry_settings, :only => [:edit, :update]
   end
 end

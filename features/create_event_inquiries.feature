@@ -1,7 +1,7 @@
 @refinerycms @event_inquiries @event_inquiries-create
 Feature: Create EventInquiries
   In order to contact the website owner
-  I want to create an event_enquiry
+  I want to create an event_inquiry
 
   Background:
     Given A Refinery user exists
@@ -16,7 +16,7 @@ Feature: Create EventInquiries
     And I should see "Phone"
     And I should see "Message *"
 
-  Scenario: Create a valid event_enquiry
+  Scenario: Create a valid event_inquiry
     When I go to the contact page
     And I fill in "Name *" with "Philip"
     And I fill in "Email *" with "phil@refinerycms.com"
@@ -26,7 +26,7 @@ Feature: Create EventInquiries
     And I should see "Thank You"
     And I should have 1 event_inquiries
 
-  Scenario: Create an invalid event_enquiry
+  Scenario: Create an invalid event_inquiry
     When I go to the contact page
     And I press "Send"
     Then I should be on the contact create page

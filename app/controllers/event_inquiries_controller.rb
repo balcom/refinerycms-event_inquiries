@@ -7,24 +7,24 @@ class EventInquiriesController < ApplicationController
   end
 
   def new
-    @event_enquiry = EventInquiry.new
+    @event_inquiry = EventInquiry.new
   end
 
   def create
-    @event_enquiry = EventInquiry.new(params[:event_enquiry])
+    @event_inquiry = EventInquiry.new(params[:event_inquiry])
 
-    if @event_enquiry.save
-      if @event_enquiry.ham?
+    if @event_inquiry.save
+      if @event_inquiry.ham?
         begin
-          EventInquiryMailer.notification(@event_enquiry, request).deliver
+          EventInquiryMailer.notification(@event_inquiry, request).deliver
         rescue
-          logger.warn "There was an error delivering an event_enquiry notification.\n#{$!}\n"
+          logger.warn "There was an error delivering an event_inquiry notification.\n#{$!}\n"
         end
 
         begin
-          EventInquiryMailer.confirmation(@event_enquiry, request).deliver
+          EventInquiryMailer.confirmation(@event_inquiry, request).deliver
         rescue
-          logger.warn "There was an error delivering an event_enquiry confirmation:\n#{$!}\n"
+          logger.warn "There was an error delivering an event_inquiry confirmation:\n#{$!}\n"
         end
       end
 

@@ -1,9 +1,9 @@
 <div id='actions'>
   <h2><%= t('.details')%></h2>
   <p>
-    <strong><%= t('.age') %>:</strong> <%= time_ago_in_words(@event_enquiry.created_at) %>
+    <strong><%= t('.age') %>:</strong> <%= time_ago_in_words(@event_inquiry.created_at) %>
   </p>
-  <% if @event_enquiry.spam? %>
+  <% if @event_inquiry.spam? %>
     <p>
       <strong><%= t('.spam') %>:</strong> <%= t('.spam_yes') %>
     </p>
@@ -15,17 +15,17 @@
     </li>
     <li>
       <%= link_to t('admin.event_inquiries.delete'),
-                  admin_event_enquiry_url(@event_enquiry),
+                  admin_event_inquiry_url(@event_inquiry),
                   :class => 'delete_icon no-tooltip confirm-delete',
                   :title => t('admin.event_inquiries.delete'),
-                  :confirm => t('shared.admin.delete.message', :title => @event_enquiry.name),
+                  :confirm => t('shared.admin.delete.message', :title => @event_inquiry.name),
                   :method => :delete %>
     </li>
   </ul>
 </div>
 <div id='records'>
-  <h2><%= t('.event_enquiry') %></h2>
-  <table id='event_enquiry'>
+  <h2><%= t('.event_inquiry') %></h2>
+  <table id='event_inquiry'>
     <tr>
       <td>
         <strong><%= t('.to') %></strong>
@@ -39,16 +39,16 @@
         <strong><%= t('.from') %></strong>
       </td>
       <td>
-        <%= @event_enquiry.name %> [<%= mail_to @event_enquiry.email, @event_enquiry.email, {:title => t('.click_to_email')} %>]
+        <%= @event_inquiry.name %> [<%= mail_to @event_inquiry.email, @event_inquiry.email, {:title => t('.click_to_email')} %>]
       </td>
     </tr>
-    <% unless @event_enquiry.phone.blank? %>
+    <% unless @event_inquiry.phone.blank? %>
       <tr>
         <td>
           <strong><%= t('.phone') %></strong>
         </td>
         <td>
-          <%= @event_enquiry.phone %>
+          <%= @event_inquiry.phone %>
         </td>
       </tr>
     <% end %>
@@ -57,7 +57,7 @@
         <strong><%= t('.date') %></strong>
       </td>
       <td>
-        <%= l(Date.parse(@event_enquiry.created_at.to_s), :format => :long) %>
+        <%= l(Date.parse(@event_inquiry.created_at.to_s), :format => :long) %>
       </td>
     </tr>
     <tr>
@@ -65,7 +65,7 @@
         <strong><%= t('.message') %></strong>
       </td>
       <td>
-        <%= simple_format @event_enquiry.message, :style => 'margin-top: 0' %>
+        <%= simple_format @event_inquiry.message, :style => 'margin-top: 0' %>
       </td>
     </tr>
   </table>

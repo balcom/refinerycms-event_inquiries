@@ -5,7 +5,7 @@
     <% if @event_inquiries.any? %>
       <%= will_paginate @event_inquiries %>
       <ul>
-        <%= render :partial => "event_enquiry", :collection => @event_inquiries %>
+        <%= render :partial => "event_inquiry", :collection => @event_inquiries %>
       </ul>
       <%= will_paginate @event_inquiries %>
     <% else %>
@@ -15,9 +15,9 @@
     <% if @event_inquiries.any? -%>
       <%= will_paginate @event_inquiries %>
       <% group_by_date(@event_inquiries).each do |container| %>
-        <h3><%= l((event_enquiry_group = container.last).first.created_at, :format => :short) %></h3>
+        <h3><%= l((event_inquiry_group = container.last).first.created_at, :format => :short) %></h3>
         <ul>
-          <%= render :partial => 'event_enquiry', :collection => event_enquiry_group %>
+          <%= render :partial => 'event_inquiry', :collection => event_inquiry_group %>
         </ul>
       <% end %>
       <%= will_paginate @event_inquiries %>

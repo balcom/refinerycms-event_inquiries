@@ -4,9 +4,9 @@ da:
       title: Henvendelser
   activerecord:
     models:
-      event_enquiry: Henvendelse
+      event_inquiry: Henvendelse
     attributes:
-      event_enquiry:
+      event_inquiry:
         to: Til
         from: Fra
         click_to_email: Send en e-mail til adressen
@@ -21,15 +21,15 @@ da:
       privacy_policy: "Vi værner om dine personlige oplysninger"
   admin:
     event_inquiries:
-      event_enquiry:
-        move_event_enquiry_to_closed: Flyt til lukkede henvendelser
-        move_event_enquiry_to_open: Flyt til åbne henvendelser
-        read_event_enquiry: Læs henvendelse
-        remove_event_enquiry: "Er du sikker på du vil slette denne henvendelse fra '%{name}'?"
+      event_inquiry:
+        move_event_inquiry_to_closed: Flyt til lukkede henvendelser
+        move_event_inquiry_to_open: Flyt til åbne henvendelser
+        read_event_inquiry: Læs henvendelse
+        remove_event_inquiry: "Er du sikker på du vil slette denne henvendelse fra '%{name}'?"
         title: Slet henvendelse.
       toggle_status:
-        closed: "Henvendelsen '%{event_enquiry}' er lukket"
-        reopened: "Henvendelsen '%{event_enquiry}' er genåbnet"
+        closed: "Henvendelsen '%{event_inquiry}' er lukket"
+        reopened: "Henvendelsen '%{event_inquiry}' er genåbnet"
       index:
         search_results_for: "Søgeresultat for '%{query}'"
         no_event_inquiries: Du har endnu ikke modtaget nogen henvendelser.
@@ -42,15 +42,15 @@ da:
         age: Tid siden modtagelse
         actions: Handlinger
         back_to_all_event_inquiries: Tilbage til alle henvendelser
-        event_enquiry: Henvendelse
+        event_inquiry: Henvendelse
       submenu:
         update_notified: Opdatér, hvem der får besked
         edit_confirmation_email: Redigér e-mailbekræftelse
-    event_enquiry_settings:
+    event_inquiry_settings:
       update:
         updated: "'%{setting}' er opdateret."
       notification_recipients_form:
-        event_enquiry_settings_value_name: Send besked til
+        event_inquiry_settings_value_name: Send besked til
         explanation: "Hver gang kontaktformularen benyttes, sender Refinery en e-mail med besked om, at der er modtaget en ny henvendelse"
         hint: "Indtast en e-mail-adresse ovenfor. Skal beskeden sendes til mere end en person, så indtast flere adresser adskilt med kommaer."
         example: "Fx mig@domæne.dk, ven@hotmail.com, kollega@arbejde.dk"
@@ -61,7 +61,7 @@ da:
         click_to_edit_subject: Klik her for at redigere emnet
         explanation: "Hver gang kontaktformularen benyttes, sender Refinery en e-mail til den person, der udfyldte formularen, for at bekræfte henvendelsen."
         below_edit_email_sent: Nedenfor kan du redigere e-mailen, der sendes ud.
-        the_customer_making_event_enquiry: Kunden, der har henvendt sig
+        the_customer_making_event_inquiry: Kunden, der har henvendt sig
         message: Besked
         note: "Bemærk: Anbring teksten %name%, der hvor du vil have kundens navn skal være i e-mailen"
       subject_form:

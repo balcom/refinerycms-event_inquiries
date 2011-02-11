@@ -4,7 +4,7 @@ module NavigationHelpers
       def path_to(page_name)
         case page_name
         when /the contact page/
-          new_event_enquiry_path
+          new_event_inquiry_path
 
         when /the contact thank you page/
           thank_you_event_inquiries_path

@@ -10,8 +10,8 @@ lolcat:
   admin:
     event_inquiries:
       delete: REMOOV DIS INQUIRY FOREVR
-      event_enquiry:
-        read_event_enquiry: READ TEH INQUIRY
+      event_inquiry:
+        read_event_inquiry: READ TEH INQUIRY
         said: SED
         mark_as_spam: MARK AS SPAM
         mark_as_ham: MOOV 2 INBOX
@@ -30,16 +30,16 @@ lolcat:
         back_to_all_event_inquiries: BAK 2 ALL INQUIRIEZ
         spam: SPAM
         spam_yes: YEZ
-        event_enquiry: INQUIRY
+        event_inquiry: INQUIRY
         to: 2
         from: FRUM
         click_to_email: CLICK 2 EMAIL DIS ADDRES
         phone: FONE
         date: DATE
         message: MESAGE
-    event_enquiry_settings:
+    event_inquiry_settings:
       notification_recipients_form:
-        event_enquiry_settings_value_name: SEND NOTIFICASHUNS 2
+        event_inquiry_settings_value_name: SEND NOTIFICASHUNS 2
         explanation: EVRY TIEM SOMEONE CONTACTS U ON UR WEBSIET, REFINERY SENDZ OUT AN EMAIL 2 SAY THAR IZ NEW INQUIRY.
         hint: WHEN NEW INQUIRY IZ SUBMITTD, REFINERY WILL SEND AN EMAIL NOTIFICASHUN 2 U.
         example: "ENTR UR EMAIL ADDRES(EZ) LIEK: JACK@WERK.COM, JILL@OFFICE.COM"
@@ -50,15 +50,15 @@ lolcat:
         click_to_edit_subject: CLICK HER 2 EDIT TEH SUBJECT
         explanation: EVRY TIEM SOMEONE CONTACTS U ON UR WEBSIET, REFINERY SENDZ OUT AN EMAIL 2 CONFIRM TEH INQUIRY WIF TEH PERSON HOO MADE IT.
         below_edit_email_sent: BELOW U CAN EDIT TEH EMAIL DAT IZ SENT OUT.
-        the_customer_making_event_enquiry: TEH CUSTOMR MAKIN TEH INQUIRY
+        the_customer_making_event_inquiry: TEH CUSTOMR MAKIN TEH INQUIRY
         message: MESAGE
         note: "Note: PLACE TEH TEXT %NAYM% WER UD LIEK TEH CUSTOMERS NAYM 2 APPEAR IN DA EMAIL"
-  event_enquiry_mailer:
+  event_inquiry_mailer:
     notification:
       greeting: OH HAI THAR
-      you_recieved_new_event_enquiry: U JUS RECEIVD NEW INQUIRY ON UR WEBSIET.
-      event_enquiry_starts: --- INQUIRY STARTS ---
-      event_enquiry_ends: --- INQUIRY ENDZ ---
+      you_recieved_new_event_inquiry: U JUS RECEIVD NEW INQUIRY ON UR WEBSIET.
+      event_inquiry_starts: --- INQUIRY STARTS ---
+      event_inquiry_ends: --- INQUIRY ENDZ ---
       from: FRUM
       email: EMAIL
       phone: FONE
@@ -67,9 +67,9 @@ lolcat:
       ps: P.S. ALL UR INQUIRIEZ R STORD IN DA "INQUIRIEZ" SECSHUN OV REFINERY SHUD U EVR WANTS 2 VIEW IT LATR THAR.
   activerecord:
     models:
-      event_enquiry: INQUIRY
+      event_inquiry: INQUIRY
     attributes:
-      event_enquiry:
+      event_inquiry:
         name: NAYM
         email: EMAIL
         phone: FONE

@@ -4,9 +4,9 @@ es:
       title: Consultas
   activerecord:
     models:
-      event_enquiry: Consulta
+      event_inquiry: Consulta
     attributes:
-      event_enquiry:
+      event_inquiry:
         to: Para
         from: De
         click_to_email: Dale Click a este email
@@ -22,15 +22,15 @@ es:
       privacy_policy: "Nosotros valoramos tu privacidad"
   admin:
     event_inquiries:
-      event_enquiry:
-        move_event_enquiry_to_closed: Cambiar esta consulta a cerrada
-        move_event_enquiry_to_open: Cambiar esta consulta a abierta
-        read_event_enquiry: Leer esta consulta
-        remove_event_enquiry: "Estas seguro que quieres borrar esta consulta de '%{name}'?"
+      event_inquiry:
+        move_event_inquiry_to_closed: Cambiar esta consulta a cerrada
+        move_event_inquiry_to_open: Cambiar esta consulta a abierta
+        read_event_inquiry: Leer esta consulta
+        remove_event_inquiry: "Estas seguro que quieres borrar esta consulta de '%{name}'?"
         title: Quitar esta consulta.
       toggle_status:
-        closed: "La consulta '%{event_enquiry}' esta cerrada"
-        reopened: "La consulta '%{event_enquiry}' esta abierta"
+        closed: "La consulta '%{event_inquiry}' esta cerrada"
+        reopened: "La consulta '%{event_inquiry}' esta abierta"
       index:
         search_results_for: Resultados de la busqueda de %{query}
         no_event_inquiries: No has recibido ninguna consulta aun.
@@ -43,15 +43,15 @@ es:
         age: Edad
         actions: Acciones
         back_to_all_event_inquiries: Regresar a todas las consultas
-        event_enquiry: Consulta
+        event_inquiry: Consulta
       submenu:
         update_notified: "Actualizar a quien será notificado"
         edit_confirmation_email: "Editar email de confirmación"
-    event_enquiry_settings:
+    event_inquiry_settings:
       update:
         updated: "'%{setting}' fue actualizado exitosamente."
       notification_recipients_form:
-        event_enquiry_settings_value_name: Mandar notificaciones a
+        event_inquiry_settings_value_name: Mandar notificaciones a
         explanation: "Cada vez que alguien se comunique con usted en su sitio web, Refinery enviara un correo electrónico respecto a esta nueva consulta."
         hint: "Ingrese una dirección de correo. Ingrese la dirección de correo de las persona que vaya a ser notificada, si quiere que varias personas sean notificadas ingrese las direcciones de correo separadas por comas."
         example: "Ejemplo: me@domain.com, friend@msn.com, workmate@work.com"
@@ -62,7 +62,7 @@ es:
         click_to_edit_subject: Click aqui para modificar el asunto
         explanation: "Cada vez que alguien se comunique con usted en su sitio web, Refinery enviara un correo electrónico respecto a esta nueva consulta."
         below_edit_email_sent: "Abajo usted puede editar el email a donde la consulta será enviado."
-        the_customer_making_event_enquiry: El cliente haciendo la consulta
+        the_customer_making_event_inquiry: El cliente haciendo la consulta
         message: Mensaje
         note: "Nota: ingrese el texto %name% donde quiera que el nombre del cliente aparezca en el email"
       subject_form:

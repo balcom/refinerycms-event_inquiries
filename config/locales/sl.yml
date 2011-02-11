@@ -4,9 +4,9 @@ sl:
       title: Povpraševanja
   activerecord:
     models:
-      event_enquiry: Povpraševanje
+      event_inquiry: Povpraševanje
     attributes:
-      event_enquiry:
+      event_inquiry:
         to: Za
         from: Od
         click_to_email: Pošlji email sporočilo
@@ -21,16 +21,16 @@ sl:
       privacy_policy: "Cenimo vašo zasebnost"
   admin:
     event_inquiries:
-      event_enquiry:
+      event_inquiry:
         said: pravi
-        move_event_enquiry_to_closed: Premakni povpraševanje v zaprto
-        move_event_enquiry_to_open: Premakni povpraševanje v odprto
-        read_event_enquiry: Preberi povpraševanje
-        remove_event_enquiry: "Ali ste prepričani da želite odstraniti povpraševanje od '%{name}'?"
+        move_event_inquiry_to_closed: Premakni povpraševanje v zaprto
+        move_event_inquiry_to_open: Premakni povpraševanje v odprto
+        read_event_inquiry: Preberi povpraševanje
+        remove_event_inquiry: "Ali ste prepričani da želite odstraniti povpraševanje od '%{name}'?"
         title: Odstrani povpraševanje.
       toggle_status:
-        closed: "Povpraševanje '%{event_enquiry}' je zaprto"
-        reopened: "Povpraševanje '%{event_enquiry}' je ponovno odprto"
+        closed: "Povpraševanje '%{event_inquiry}' je zaprto"
+        reopened: "Povpraševanje '%{event_inquiry}' je ponovno odprto"
       index:
         no_event_inquiries: Trenutno še ni nobenega povpraševanja.
       submenu:
@@ -45,12 +45,12 @@ sl:
         age: Starost
         actions: Možnosti
         back_to_all_event_inquiries: Nazaj na vsa povpraševanja
-        event_enquiry: Povpraševanje
-    event_enquiry_settings:
+        event_inquiry: Povpraševanje
+    event_inquiry_settings:
       update:
         updated: "'%{setting}' je bila uspešno posodobljena."
       notification_recipients_form:
-        event_enquiry_settings_value_name: Pošlji obvestilo na
+        event_inquiry_settings_value_name: Pošlji obvestilo na
         explanation: "Vedno ko vas nekdo kontaktira na vaši spletni strani, vam Refinery pošlje email obvestilo o novem povpraševanju."
         hint: "V zgornje polje vnesite email naslov. Želite da obvestila prejme več oseb? Vnesite več email naslovov ločenih z vejicami."
         example: "Primer: jaz@domena.com, prijatelj@msn.com, sodelavec@work.com"
@@ -61,7 +61,7 @@ sl:
         click_to_edit_subject: Uredi zadevo
         explanation: "Vedno ko vas nekdo kontaktira na vaši spletni strani mu Refinery pošlje email obvestilo o prejetem povpraševanju."
         below_edit_email_sent: Spodaj lahko uredite vsebino email sporočila.
-        the_customer_making_event_enquiry: Stranka, ki je poslala povpraševanje
+        the_customer_making_event_inquiry: Stranka, ki je poslala povpraševanje
         message: Sporočilo
         note: "Opomba: vstavite tekst %name% kjer želite, da se pojavi ime stranke v email sporočilu."
       subject_form:

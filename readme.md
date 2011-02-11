@@ -27,15 +27,15 @@ Next migrate your database and you're done:
 
 ## About
 
-__Add a simple contact form to Refinery that notifies you and the customer when an event_enquiry is made.__
+__Add a simple contact form to Refinery that notifies you and the customer when an event_inquiry is made.__
 
 In summary you can:
 
 * Collect and manage event_inquiries
-* Specify who is notified when a new event_enquiry comes in
-* Customise an auto responder email that is sent to the person making the event_enquiry
+* Specify who is notified when a new event_inquiry comes in
+* Customise an auto responder email that is sent to the person making the event_inquiry
 
-When event_inquiries come in, you and the customer are notified. The event_enquiry will now show up as an "open" event_enquiry. The idea is to deal with the event_enquiry and then "close" it so you know it's been sorted.
+When event_inquiries come in, you and the customer are notified. The event_inquiry will now show up as an "open" event_inquiry. The idea is to deal with the event_inquiry and then "close" it so you know it's been sorted.
 
 ## How do I get Notified?
 
