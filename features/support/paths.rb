@@ -1,22 +1,22 @@
 module NavigationHelpers
   module Refinery
-    module Inquiries
+    module EventInquiries
       def path_to(page_name)
         case page_name
         when /the contact page/
-          new_inquiry_path
+          new_event_enquiry_path
 
         when /the contact thank you page/
-          thank_you_inquiries_path
+          thank_you_event_inquiries_path
 
         when /the contact create page/
-          inquiries_path
+          event_inquiries_path
 
-        when /the list of inquiries/
-          admin_inquiries_path
+        when /the list of event_inquiries/
+          admin_event_inquiries_path
 
-        when /the list of spam inquiries/
-          spam_admin_inquiries_path
+        when /the list of spam event_inquiries/
+          spam_admin_event_inquiries_path
         else
           nil
         end

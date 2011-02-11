@@ -1,11 +1,11 @@
 <% content_for :body_content_left do %>
-  <div class='inquiries'>
+  <div class='event_inquiries'>
     <%=raw @page[Page.default_parts.first.to_sym] %>
 
-    <%= form_for @inquiry do |f| %>
+    <%= form_for @event_enquiry do |f| %>
       <%= render :partial => "/shared/admin/error_messages",
                  :locals => {
-                   :object => @inquiry,
+                   :object => @event_enquiry,
                    :include_object_name => true
                  } %>
       <div class='field'>
