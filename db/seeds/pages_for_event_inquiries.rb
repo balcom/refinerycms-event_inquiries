@@ -1,9 +1,9 @@
 page_position = (Page.maximum(:position, :conditions => {:parent_id => nil}) || -1)
 
 reservations_page = Page.create({
-  :title => "Reservations",
-  :link_url => "/reservations",
-  :menu_match => "^/(event_inquiries|reservations).*$",
+  :title => "Plan an Event",
+  :link_url => "/plan-an-event",
+  :menu_match => "^/(event_inquiries|plan-an-event).*$",
   :deletable => false,
   :position => (page_position += 1)
 })
